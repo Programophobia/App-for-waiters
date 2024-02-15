@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/common/NavBar/NavBar';
 import Error from './components/pages/Error';
+import Footer from './components/views/Footer/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/table/:tableId" element={<Table />} />
           <Route path="*" element={<Error />} />
         </Routes>
+        <Footer />
       </Container>
 </main>
   )
