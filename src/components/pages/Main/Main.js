@@ -17,7 +17,7 @@ const Main = () => {
                                 <h2>Table {table.id}</h2>
                                 <p><b>Status:</b> {table.status}</p>
                             </div>
-                            <button>Show more</button>
+                            <button><a href={"http://localhost:3000/table/" + table.id}>MORE</a></button>
                         </li>
                     )}
                 </ul>
