@@ -5,8 +5,15 @@ import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/common/NavBar/NavBar';
 import Error from './components/pages/Error';
 import Footer from './components/views/Footer/Footer';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchTables } from './redux/store';
+
 
 const App = () => {
+  //const dispatch = useDispatch();
+ // useEffect(() => dispatch(fetchTables()), [dispatch]);
+
   return (
     <main>
      <NavBar />
