@@ -7,26 +7,25 @@ import Error from './components/pages/Error';
 import Footer from './components/views/Footer/Footer';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchTables } from './redux/store';
-
+import { fetchTables } from './redux/tablesRedux';
 
 const App = () => {
-  //const dispatch = useDispatch();
- // useEffect(() => dispatch(fetchTables()), [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(fetchTables()), [dispatch]);
 
   return (
     <main>
      <NavBar />
-     <h2 className="mb-4 text-center">TABLES: </h2>
-      <Container>
-      <Routes>
-          <Route path="/" element={<Main/>} />
-          <Route path="/table/:id" element={<Table />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
+     <h2 className="mb-4 text-center"><i className="fa-solid fa-utensils"></i> WAITER APP <i className="fa-solid fa-utensils"></i> </h2>
+        <Container>
+          <Routes>
+              <Route path="/" element={<Main/>} />
+              <Route path="/table/:tableId" element={<Table />} />
+              <Route path="*" element={<Error />} />
+          </Routes>
         <Footer />
       </Container>
-</main>
+    </main>
   )
 }
 export default App;
