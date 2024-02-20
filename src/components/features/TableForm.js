@@ -91,18 +91,17 @@ const TableForm = ({ tableData }) => {
 	return (
 		<>
 			<form onSubmit={handleSubmit}>
-				<Title id={tableData.id}><i class="fa-solid fa-folder-open"></i> Table</Title>
+				<Title id={tableData.id}><i className="fa-solid fa-folder-open"></i> Table</Title>
 				<div className='d-flex flex-row'>
 					<h4>Status: </h4>
 					<select
 						className='mx-4 rounded'
 						defaultValue={tableData.status}
-						onChange={handleChangeStatus}
-					>
-						<option value='Free'>Free</option>
-						<option value='Reserved'>Reserved</option>
-						<option value='Busy'>Busy</option>
-						<option value='Cleaning'>Cleaning</option>
+						onChange={handleChangeStatus}>
+							<option value='Free'>Free</option>
+							<option value='Reserved'>Reserved</option>
+							<option value='Busy'>Busy</option>
+							<option value='Cleaning'>Cleaning</option>
 					</select>
 				</div>
 				<div className='d-flex flex-row my-4'>

@@ -17,7 +17,7 @@ const Main = () => {
 					<li className='list-group-item d-flex flex-row justify-content-between shadow-lg p-3 mb-5 bg-body rounded'
 						key={table.id}>
 						<div className='d-flex flex-row'>
-							<h5 className='fs-3'><i class="fa-solid fa-chair"></i> Table {table.id}</h5>
+							<h5 className='fs-3'><i className="fa-solid fa-chair"></i> Table {table.id}</h5>
 							<h5 className='mx-4 mt-2 position-absolute top-30 start-50'>
 								<span>
 									<strong>Status: </strong>
