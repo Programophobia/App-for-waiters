@@ -1,1 +1,1 @@
-https://app-for-waiters-production.up.railway.app/
+ https://app-for-waiters-production.up.railway.app/
